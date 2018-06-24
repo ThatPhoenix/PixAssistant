@@ -197,4 +197,4 @@ message.channel.sendMessage(message.channel.send(`= STATISTICS =
 //////////////////
 
 /////////////////
-client.login(token)
+client.login(process.env.TOKEN)
