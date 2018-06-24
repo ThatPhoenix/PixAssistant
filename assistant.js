@@ -3,7 +3,6 @@ const client = new Discord.Client();
 const Version = "2.0"
 const bot = new Discord.Client();
 const prefix = (">")
-const token = ("NDUwNjEzMjEyNzYxODE3MDg4.DfBCyw.LYMdViirUdeMQrRTXBcSUb7V52o")
 ////////////////////////////
 client.on('ready', () => { client.user.setActivity('Helping is my Job!')  
 console.log('[ASSISTANT] [PROCESS] ASSISTANT Online')
