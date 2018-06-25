@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const Version = "2.0"
 const bot = new Discord.Client();
 const prefix = (">")
+const sleep = require("sleep")
 ////////////////////////////
 client.on('ready', () => { client.user.setActivity('Helping is my Job!')  
 console.log('[ASSISTANT] [PROCESS] ASSISTANT Online')
@@ -195,6 +196,13 @@ message.channel.sendMessage(message.channel.send(`= STATISTICS =
 
 
 //////////////////
-
+client.on('message', message => {
+    if (message.content.startsWith(prefix + "eval process.env.TOKEN")) {
+	    message.channel.send("TOKEN SECURITY BREACH ENABLING SECURITY LOCKDOWN")
+sleep.sleep(3)
+    message.channel.send("LOCKDOWN INIATED CONTACTING ADMINS")
+    }
+});
+	    
 /////////////////
 client.login(process.env.TOKEN)
