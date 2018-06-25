@@ -4,6 +4,7 @@ const Version = "2.0"
 const bot = new Discord.Client();
 const prefix = (">")
 const sleep = require("sleep")
+const emergency = ("ENABLING LOCKDOWN")
 ////////////////////////////
 client.on('ready', () => { client.user.setActivity('Helping is my Job!')  
 console.log('[ASSISTANT] [PROCESS] ASSISTANT Online')
@@ -201,6 +202,10 @@ client.on('message', message => {
 	    message.channel.send("TOKEN SECURITY BREACH ENABLING SECURITY LOCKDOWN")
 sleep.sleep(3)
     message.channel.send("LOCKDOWN INIATED CONTACTING ADMINS")
+	  client.user.setActivity(emergency) 
+	   client.user.setStatus("dnd")
+	    message.channel.send("Shutting Down For Exploit Prevention")
+	    
     }
 });
 	    
