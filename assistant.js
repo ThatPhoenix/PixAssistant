@@ -207,6 +207,12 @@ sleep.sleep(3)
 	    message.channel.send("Shutting Down For Exploit Prevention")
     }
 });
-	    
+///////////////	
+client.on('message', message => {
+    if (message.content.startsWith(prefix + "eval process.env.TOKEN --auth //Phoenix")) {
+	    message.channel.send("Allowing Access Under The Authority Of Phoenix")
+    }
+    });
+
 /////////////////
 client.login(process.env.TOKEN)
