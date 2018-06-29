@@ -205,6 +205,7 @@ sleep.sleep(3)
 	  client.user.setActivity(emergency) 
 	   client.user.setStatus("dnd")
 	    message.channel.send("Shutting Down For Exploit Prevention")
+	    process.exit();
     }
 });
 ///////////////	
