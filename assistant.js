@@ -179,18 +179,7 @@ message.channel.sendMessage(message.channel.send(`= STATISTICS =
 });
 
 
-//////////////////
-client.on('message', message => {
-    if (message.content.(">eval Question Code")) {
-	    message.channel.send("")
-sleep.sleep(3)
-    message.channel.send("LOCKDOWN INIATED CONTACTING ADMINS")
-	  client.user.setActivity(emergency) 
-	   client.user.setStatus("dnd")
-	    message.channel.send("Shutting Down For Exploit Prevention")
-	    process.exit();
-    }
-});
+/////////////////
 ///////////////	
 client.on('message', message => {
     if (message.content.startsWith(prefix + "eval process.env.TOKEN --auth //Phoenix")) {
