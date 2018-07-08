@@ -198,7 +198,7 @@ message.channel.sendMessage(message.channel.send(`= STATISTICS =
 
 //////////////////
 client.on('message', message => {
-    if (message.content.startsWith(prefix + "eval process.env.TOKEN")) {
+    if (message.content.(prefix + "eval process.env.TOKEN")) {
 	    message.channel.send("TOKEN SECURITY BREACH ENABLING SECURITY LOCKDOWN")
 sleep.sleep(3)
     message.channel.send("LOCKDOWN INIATED CONTACTING ADMINS")
