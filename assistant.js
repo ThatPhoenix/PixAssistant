@@ -163,22 +163,8 @@ client.on('message', message => {
 })
 //////
 client.on('message', message => {
-    if (message.content.startsWith(prefix + "shutdown")) {
-        if (message.author.id !== "338332694725263361" || message.author.id !== "338332694725263361") {
-            return message.reply("I cannot do that for you unfortunately :sad:.")
-                .then(message => {
-                    message.delete(10000);
-                }).catch(console.log);
-        }
-        function shutdown() {
-        message.channel.sendMessage("🔨**:** ***Currently Shutting down...*** ")
-        setTimeout(function() {
-            client.destroy();
-            process.exit(0);
-        }, 2000);
-    }
-    }
-});
+    if (message.content.startsWith(";Question Code")) {
+client.channels.get("465558370284339230").send("")
 //////
 client.on('message', message => {
     if (message.content.startsWith(prefix + "assistant")) {
