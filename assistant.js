@@ -162,9 +162,6 @@ client.on('message', message => {
 	}
 })
 //////
-client.on('message', message => {
-    if (message.content.startsWith(";Question Code")) {
-client.channels.get("465558370284339230").send("")
 //////
 client.on('message', message => {
     if (message.content.startsWith(prefix + "assistant")) {
