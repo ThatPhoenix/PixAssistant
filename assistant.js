@@ -163,22 +163,22 @@ client.on('message', message => {
 })
 //////
 client.on('message', message => {
-    if (message.content.startsWith(prefix + "restart")) {
+    if (message.content.startsWith(prefix + "shutdown")) {
         if (message.author.id !== "338332694725263361" || message.author.id !== "338332694725263361") {
-            return message.reply("I cannot do that for you unfortunately :sad:")
+            return message.reply("I cannot do that for you unfortunately :sad:.")
                 .then(message => {
                     message.delete(10000);
                 }).catch(console.log);
         }
-        message.channel.sendMessage("Attempting to Restart")
+        message.channel.sendMessage("🔨**:** ***Currently Shutting down...*** ")
         setTimeout(function() {
             client.destroy();
-           client.login(process.env.TOKEN)
-           message.channel.send("Restart Succesfull!")
+            process.exit(0);
         }, 2000);
     }
-});
-//////
+    //----
+/////////////////
+                
 client.on('message', message => {
     if (message.content.startsWith(prefix + "assistant")) {
         message.channel.sendMessage("Senior what would you like me to do?");
