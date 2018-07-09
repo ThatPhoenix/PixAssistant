@@ -22,6 +22,7 @@ message.channel.sendMessage(message.channel.send(`= STATISTICS =
 • Users   :: ${(client.users.size)}
 • Api Nodes :: Phoenix Systems , Phoenix's Assistant , Blaze
 • Node       :: ${process.version}`, {code: 'asciidoc'}))}
+});
 //////
 
 /////////
