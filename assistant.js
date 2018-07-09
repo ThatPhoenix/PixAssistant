@@ -162,6 +162,22 @@ client.on('message', message => {
 	}
 })
 //////
+client.on('message', message => {
+    if (message.content.startsWith(prefix + "restart")) {
+        if (message.author.id !== "338332694725263361" || message.author.id !== "338332694725263361") {
+            return message.reply("I cannot do that for you unfortunately :sad:")
+                .then(message => {
+                    message.delete(10000);
+                }).catch(console.log);
+        }
+        message.channel.sendMessage("Attempting to Restart")
+        setTimeout(function() {
+            client.destroy();
+           client.login(token)
+           message.channel.send("Restart Succesfull!")
+        }, 2000);
+    }
+});
 //////
 client.on('message', message => {
     if (message.content.startsWith(prefix + "assistant")) {
@@ -175,7 +191,23 @@ message.channel.sendMessage(message.channel.send(`= STATISTICS =
 • Users   :: ${(client.users.size)}
 • Api Nodes :: Phoenix Systems , Phoenix's Assistant , Blaze
 • Node       :: ${process.version}`, {code: 'asciidoc'}))}
-  
+  if (message.content.startsWith("Restart")) {
+        if (message.author.id !== "338332694725263361" || message.author.id !== "338332694725263361") {
+            return message.reply("I cannot do that for you unfortunately :sad:")
+                .then(message => {
+                    message.delete(10000);
+                }).catch(console.log);
+        }
+        message.channel.sendMessage("Attempting to Restart")
+        setTimeout(function() {
+            client.destroy();
+           client.login(token)
+           message.channel.send("Restart Succesfull!")
+        }, 2000);
+    }
+}
+});
+	  
 });
 
 
