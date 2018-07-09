@@ -174,10 +174,10 @@ client.on('message', message => {
         setTimeout(function() {
             client.destroy();
            client.login(token)
-           message.channel.send("Restart Succesfull!")
+           message.channel.send("Restart Succesful!")
         }, 2000);
     }
-});
+})
 //////
 client.on('message', message => {
     if (message.content.startsWith(prefix + "assistant")) {
