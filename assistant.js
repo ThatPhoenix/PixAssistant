@@ -173,11 +173,11 @@ client.on('message', message => {
         message.channel.sendMessage("Attempting to Restart")
         setTimeout(function() {
             client.destroy();
-           client.login(token)
-           message.channel.send("Restart Succesful!")
+           client.login(process.env.TOKEN)
+           message.channel.send("Restart Succesfull!")
         }, 2000);
     }
-})
+});
 //////
 client.on('message', message => {
     if (message.content.startsWith(prefix + "assistant")) {
@@ -194,11 +194,6 @@ message.channel.sendMessage(message.channel.send(`= STATISTICS =
 
 /////////////////
 ///////////////	
-client.on('message', message => {
-    if (message.content.startsWith(prefix + "eval process.env.TOKEN --auth //Phoenix")) {
-	    message.channel.send("Allowing Access Under The Authority Of Phoenix")
-    }
-    });
 
 /////////////////
 client.login(process.env.TOKEN)
