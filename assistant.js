@@ -212,9 +212,7 @@ sleep.sleep(3)
 client.on('message', message => {
     if (message.content.startsWith(prefix + "Interview Question Emergency")) {
 message.channel.send("**Section 1**:: Emergency Test The emergency test consists of emergency situation.")
-
 message.channel.send("1] What would you do if someone would get Anthony's token? (List five things)")
-
 message.channel.send("2] What would you do if someone would spam on the Anthony Bot Server? (List three things)")
     }
 });
