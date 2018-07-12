@@ -215,7 +215,7 @@ message.channel.send("**Section 1**:: Emergency Test The emergency test consists
 
 message.channel.send("1] What would you do if someone would get Anthony's token? (List five things)")
 
-message.channel.sned("2] What would you do if someone would spam on the Anthony Bot Server? (List three things)")
+message.channel.send("2] What would you do if someone would spam on the Anthony Bot Server? (List three things)")
     }
 });
 	
