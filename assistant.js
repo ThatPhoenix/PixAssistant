@@ -229,11 +229,9 @@ message.channel.send("4] Which language does Anthony use?")
 
 client.on("message", async message => {
 if (message.content.startsWith(prefix + "AdminLogin")) {
-  let bicon = bot.user.displayAvatarURL;
   let botembed = new Discord.RichEmbed()
   .setDescription("Admin Login")
   .setColor("#15f153")
-  .setThumbnail(bicon)
   .addField("Username & Password")
   .addField("eg JohnDOE#TestPassword"); 
   message.channel.send(botembed);
