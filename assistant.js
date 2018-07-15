@@ -227,6 +227,28 @@ message.channel.send("4] Which language does Anthony use?")
 }
 	});
 
+client.on("message", async message => {
+if (message.content.startsWith(prefix + "AdminLogin")) {
+  let bicon = bot.user.displayAvatarURL;
+  let botembed = new Discord.RichEmbed()
+  .setDescription("Admin Login")
+  .setColor("#15f153")
+  .setThumbnail(bicon)
+  .addField("Username & Password")
+  .addField("eg JohnDOE#TestPassword"); 
+  message.channel.send(botembed);
+} 
+if (message.content.startsWith(prefix + DataAPI.OwnerADMIN)) {
+message.channel.send("Verification Complete Welcome Phoenix!!!")
+message.channel.send(":warning: | Cmds Are Work In Progress")
+}
+if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
+  message.channel.send("Verification Complete Welcome Hasan!!!")
+  message.channel.send(":warning: | Cmds Are Work In Progress")
+
+}
+});
+
 
 /////////////////
 client.login(process.env.TOKEN)
