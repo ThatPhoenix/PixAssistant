@@ -1,3 +1,8 @@
+////COPYRIGHT NOTICE
+// NO ONE IS ALLOWED TO CLONE/EDIT/FORK THIS PROJECT
+// OR ELSE YOU WILL BE REPORTED TO THE POLICE OR DISCORD TRUST & SAFTEY
+
+
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const Version = "2.0"
