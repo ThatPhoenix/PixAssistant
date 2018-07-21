@@ -257,7 +257,7 @@ LoggedinADMIN = True;
 
 client.on("message", async message => {
 if (message.content.startsWith(prefix + "System --Lockdown")) {
-	if (LoggedinADMIN == True {
+	if(LoggedinADMIN  == True){
   let botembed = new Discord.RichEmbed()
   .setDescription("Access Granted")
   .setColor("##FF0000")
@@ -269,7 +269,7 @@ if (message.content.startsWith(prefix + "System --Lockdown")) {
 	client.destroy();
 	console.error("[Process] [Security] Process has Shutdown Assistant Due to Administator Lockdown");
 }
-	if (LoggedinADMIN == False {
+	if(LoggedinADMIN  == False){
 	    message.channel.send(":x: | Not Logged In!")
 	    }
 }
