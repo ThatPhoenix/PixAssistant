@@ -266,7 +266,7 @@ if (message.content.startsWith(prefix + "System --Lockdown")) {
 	client.destroy();
 	console.error("[Process] [Security] Process has Shutdown Assistant Due to Administator Lockdown");
 }
-}; 
+}); 
 	
 /////////////////
 client.login(process.env.TOKEN)
