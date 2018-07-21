@@ -253,6 +253,19 @@ if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
 }
 });
 
-
+client.on("message", async message => {
+if (message.content.startsWith(prefix + "System --Lockdown")) {
+  let botembed = new Discord.RichEmbed()
+  .setDescription("Access Granted")
+  .setColor("##FF0000")
+  .addField("LOCKDOWN PROTOCOL INATED")
+  .addField("Initating Bot Lockdown"); 
+  message.channel.send(botembed);
+	client.user.setActivity("SYSTEM IS BYE BYE")
+	sleep.sleep(3)
+	client.destroy();
+	console.error("[Process] [Security] Process has Shutdown Assistant Due to Administator Lockdown");
+} 
+	
 /////////////////
 client.login(process.env.TOKEN)
