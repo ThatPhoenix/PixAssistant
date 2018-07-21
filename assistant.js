@@ -10,6 +10,7 @@ const bot = new Discord.Client();
 const prefix = (">")
 const sleep = require("sleep")
 const emergency = ("ENABLING LOCKDOWN")
+const DataAPI = require("./Database.json")
 ////////////////////////////
 client.on('ready', () => { client.user.setActivity('Helping is My Job!')  
 console.log('[ASSISTANT] [PROCESS] ASSISTANT Online')
