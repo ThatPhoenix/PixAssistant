@@ -11,6 +11,7 @@ const prefix = (">")
 const sleep = require("sleep")
 const emergency = ("ENABLING LOCKDOWN")
 const DataAPI = require("./Database.json")
+const LoggedinADMIN = ("False")
 ////////////////////////////
 client.on('ready', () => { client.user.setActivity('Helping is My Job!')  
 console.log('[ASSISTANT] [PROCESS] ASSISTANT Online')
@@ -242,9 +243,10 @@ if (message.content.startsWith(prefix + "AdminLogin")) {
   .addField("eg JohnDOE#TestPassword"); 
   message.channel.send(botembed);
 } 
-if (message.content.startsWith(prefix + ""PhoenixAdmin#PhoenixistheBest)) {
+if (message.content.startsWith(prefix + "PhoenixAdmin#PhoenixistheBest")) {
 message.channel.send("Verification Complete Welcome Phoenix!!!")
 message.channel.send(":warning: | Cmds Are Work In Progress")
+LoggedinADMIN = True;
 }
 if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
   message.channel.send("Verification Complete Welcome Hasan!!!")
@@ -267,6 +269,9 @@ if (message.content.startsWith(prefix + "System --Lockdown")) {
 	client.destroy();
 	console.error("[Process] [Security] Process has Shutdown Assistant Due to Administator Lockdown");
 }
+	if (LoggedinADMIN == False {
+	    message.channel.send(":x: | Not Logged In!")
+	    }
 }
 }); 
 	
