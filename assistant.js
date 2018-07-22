@@ -262,7 +262,7 @@ if (message.content.startsWith(prefix + "System --Lockdown")) {
   message.channel.send(botembed);
 	client.user.setActivity("System is Shutting Downin 10 Seconds --Administrator Lockdown")
 	sleep.sleep(10)
-	 message.guild.channels.find('name', 'system-logs').send("**[PROCESS]** **[ADMINISTRATOR]** The Process Phoenix's Assistant Will Now Be Terminated Due to PROCESS_ADMINISTRATOR_LOCKDOWN")
+	 message.guilds.channels.find('name', 'system-logs').send("**[PROCESS]** **[ADMINISTRATOR]** The Process Phoenix's Assistant Will Now Be Terminated Due to PROCESS_ADMINISTRATOR_LOCKDOWN")
 	client.destroy();
 	console.error("[Process] [Security] Process has Shutdown Assistant Due to Administator Lockdown");
 }
