@@ -246,18 +246,15 @@ if (message.content.startsWith(prefix + "AdminLogin")) {
 if (message.content.startsWith(prefix + "PhoenixAdmin#PhoenixistheBest")) {
 message.channel.send("Verification Complete Welcome Phoenix!!!")
 message.channel.send(":warning: | Cmds Are Work In Progress")
-LoggedinADMIN = True;
 }
 if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
   message.channel.send("Verification Complete Welcome Hasan!!!")
   message.channel.send(":warning: | Cmds Are Work In Progress")
-LoggedinADMIN = True;
 }
 });
 
 client.on("message", async message => {
 if (message.content.startsWith(prefix + "System --Lockdown")) {
-	if(LoggedinADMIN  == True){
   let botembed = new Discord.RichEmbed()
   .setDescription("Access Granted")
   .setColor("##FF0000")
@@ -268,10 +265,6 @@ if (message.content.startsWith(prefix + "System --Lockdown")) {
 	sleep.sleep(3)
 	client.destroy();
 	console.error("[Process] [Security] Process has Shutdown Assistant Due to Administator Lockdown");
-}
-	if(LoggedinADMIN  == False){
-	    message.channel.send(":x: | Not Logged In!")
-	    }
 }
 }); 
 	
