@@ -267,13 +267,13 @@ if (message.content.startsWith(prefix + "System --Lockdown")) {
 	console.error("[Process] [Security] Process has Shutdown Assistant Due to Administator Lockdown");
 }
 }); 
-
+client.on("message", async message => {
 if(message.content.startsWith(prefix + "sayGalaxy")) {
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
     // To get the "message" itself we join the `args` back into a string with spaces: 
     const sayMessage = args.join(" ");
      client.channel.get("456717132017958912").send(sayMessage);
   }
-
+}
 /////////////////
 client.login(process.env.TOKEN)
