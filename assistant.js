@@ -274,6 +274,6 @@ if(message.content.startsWith(prefix + "sayGalaxy")) {
     const sayMessage = args.join(" ");
      client.channel.get("456717132017958912").send(sayMessage);
   }
-}
+});
 /////////////////
 client.login(process.env.TOKEN)
