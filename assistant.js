@@ -262,16 +262,20 @@ if (message.content.startsWith(prefix + "System --Lockdown")) {
   message.channel.send(botembed);
 	client.user.setActivity("System is Shutting Down in 10 Seconds --Administrator Lockdown")
 	sleep.sleep(10)
-	 message.guilds.channels.find('name', 'system-logs').send("**[PROCESS]** **[ADMINISTRATOR]** The Process Phoenix's Assistant Will Now Be Terminated Due to PROCESS_ADMINISTRATOR_LOCKDOWN")
+	 message.guilds.channel.find('name', 'system-logs').send("**[PROCESS]** **[ADMINISTRATOR]** The Process Phoenix's Assistant Will Now Be Terminated Due to PROCESS_ADMINISTRATOR_LOCKDOWN")
 	client.destroy();
 	console.error("[Process] [Security] Process has Shutdown Assistant Due to Administator Lockdown");
 }
 }); 
 client.on("message", async message => {
-if(message.content.startsWith(prefix + "sayGalaxy")) {
-const sayMessage = args.join(" ");
-     client.channel.get("456717132017958912").send(sayMessage);
-  }
+if(message.content.startsWith(prefix + ">System --Reboot")) {
+	message.channel.send(":arrows_counterclockwise:| Restarting The Process Phoenix_Assistant")
+	client.destroy();
+	process.exit();
+	client.login(process.env.TOKEN)
+	message.channel.send("Restart Sucessfull Have a Nice Day!")
+}
 });
+
 /////////////////
 client.login(process.env.TOKEN)
