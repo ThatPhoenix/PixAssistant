@@ -260,7 +260,7 @@ if (message.content.startsWith(prefix + "System --Lockdown")) {
   .addField("LOCKDOWN PROTOCOL INATED")
   .addField("Initating Bot Lockdown"); 
   message.channel.send(botembed);
-	client.user.setActivity("System is Shutting Downin 10 Seconds --Administrator Lockdown")
+	client.user.setActivity("System is Shutting Down in 10 Seconds --Administrator Lockdown")
 	sleep.sleep(10)
 	 message.guilds.channels.find('name', 'system-logs').send("**[PROCESS]** **[ADMINISTRATOR]** The Process Phoenix's Assistant Will Now Be Terminated Due to PROCESS_ADMINISTRATOR_LOCKDOWN")
 	client.destroy();
