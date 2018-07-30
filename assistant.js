@@ -271,8 +271,7 @@ client.on("message", async message => {
 if(message.content.startsWith(prefix + ">System --Reboot")) {
 	message.channel.send(":arrows_counterclockwise:| Restarting The Process Phoenix_Assistant")
 	client.destroy();
-	process.exit();
-	client.login(process.env.TOKEN)
+	client.login(process.env.TOKEN);
 	message.channel.send("Restart Sucessfull Have a Nice Day!")
 }
 });
