@@ -266,7 +266,7 @@ if (message.content.startsWith(prefix + "System --Lockdown")) {
 	client.destroy();
 	console.error("[Process] [Security] Process has Shutdown Assistant Due to Administator Lockdown");
 }
-}; 
+}); 
 if (message.content === prefix + 'System --Reboot_MainBot') {
           if (message.author.id !== "198105686121381888" || message.author.id !== "153244623219851266") return; {
             message.channel.sendMessage(":arrows_counterclockwise:| Restarting The Process Phoenix_Assistant")
