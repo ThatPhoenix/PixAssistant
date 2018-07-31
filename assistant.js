@@ -270,7 +270,7 @@ if (message.content.startsWith(prefix + "System --Lockdown")) {
 client.on("message", async message => {
 if(message.content.startsWith(prefix + "System --Reboot")) {
 	message.channel.send(":arrows_counterclockwise:| Restarting The Process Phoenix_Assistant")
-process.exit(0);
+process.exit();
 message.channel.send("Restart Successful!")
 }
 });
