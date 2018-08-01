@@ -267,12 +267,23 @@ if (message.content.startsWith(prefix + "System --Lockdown")) {
 	console.error("[Process] [Security] Process has Shutdown Assistant Due to Administator Lockdown");
 }
 }); 
-if (message.content === prefix + 'System --Reboot_MainBot') {
+          if (message.content.startsWith(prefix + "System --Reboot Process_Assistant")) {
           if (message.author.id !== "198105686121381888" || message.author.id !== "153244623219851266") return; {
             message.channel.sendMessage(":arrows_counterclockwise:| Restarting The Process Phoenix_Assistant")
+            setTimeout(function() {
                 client.destroy();
-		    client.login(process.env.TOKEN)
-            };
+                process.exit();
+            }, 2000);
+          }
+if (message.content.startsWith(prefix + "System --Reboot Discord_Bot")) {
+          if (message.author.id !== "198105686121381888" || message.author.id !== "153244623219851266") return; {
+            message.channel.sendMessage(":arrows_counterclockwise:| Restarting The Discord Process of Phoenix_Assistant")
+            setTimeout(function() {
+                client.destroy();
+               client.login(process.env.TOKEN)
+            }, 2000);
+          }
 
+		  
 /////////////////
 client.login(process.env.TOKEN)
