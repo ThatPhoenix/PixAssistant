@@ -275,14 +275,6 @@ if (message.content.startsWith(prefix + "System --Lockdown")) {
                 process.exit();
             }, 2000);
           }
-if (message.content.startsWith(prefix + "System --Reboot Discord_Bot")) {
-          if (message.author.id !== "198105686121381888" || message.author.id !== "153244623219851266") return; {
-            message.channel.sendMessage(":arrows_counterclockwise:| Restarting The Discord Process of Phoenix_Assistant")
-            setTimeout(function() {
-                client.destroy();
-               client.login(process.env.TOKEN)
-            }, 2000);
-          }
 
 		  
 /////////////////
