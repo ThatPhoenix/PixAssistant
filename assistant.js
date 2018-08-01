@@ -270,12 +270,8 @@ if (message.content.startsWith(prefix + "System --Lockdown")) {
           if (message.content.startsWith(prefix + "System --Reboot Process_Assistant")) {
           if (message.author.id !== "198105686121381888" || message.author.id !== "153244623219851266") return; {
             message.channel.sendMessage(":arrows_counterclockwise:| Restarting The Process Phoenix_Assistant")
-            setTimeout(function() {
-                client.destroy();
-                process.exit();
-            }, 2000);
-          }
-
+	  }
+	  });
 		  
 /////////////////
 client.login(process.env.TOKEN)
