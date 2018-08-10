@@ -198,7 +198,35 @@ message.channel.sendMessage(message.channel.send(`= STATISTICS =
 • Users   :: ${(client.users.size)}
 • Api Nodes :: Phoenix Systems , Anthony Phoenix , Assistant
 • Node       :: ${process.version}`, {code: 'asciidoc'}))}
+  if (message.content.startsWith("Creator")) {
+	const embed = new Discord.RichEmbed()
+  .setTitle("Phoenix's Assistant")
+  .setAuthor("Phoenix")
+  /*
+   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
+   */
+  .setColor(0x00AE86)
+  .setDescription("I Was Made By Phoenix")
+  .setFooter("The Creator Of Me Phoenix")
+  .setImage(`${client.user.displayAvatarURL`)
+  .setThumbnail(`${client.user.displayAvatarURL`)
+
+
+
+  .setTimestamp()
+  .addField("Does Phoenix Plan To Do More on His Assistant?",
+    "Yes, I do ")
   
+
+
+  .addField("Why was Phoenix's Assistant Created?", "The Reason was to assist Phoenix with managing Phoenix Systems And Help Making Cupcakes Yum!", true)
+
+
+
+  .addBlankField(true)
+
+  message.channel.send({embed});
+  }
 });
 
 
