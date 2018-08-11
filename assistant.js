@@ -205,7 +205,7 @@ message.channel.sendMessage(message.channel.send(`= STATISTICS =
  
 	
 	
-  .setColor(db7093)
+  .setColor("db7093")
   .setDescription("I Was Made By Phoenix")
   .setFooter("The Creator Of Me Phoenix")
   .setImage(`${client.user.displayAvatarURL}`)
