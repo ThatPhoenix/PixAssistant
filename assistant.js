@@ -202,14 +202,14 @@ message.channel.sendMessage(message.channel.send(`= STATISTICS =
 	const embed = new Discord.RichEmbed()
   .setTitle("Phoenix's Assistant")
   .setAuthor("Phoenix")
-  /*
-   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-   */
+ 
+	
+	
   .setColor(0x00AE86)
   .setDescription("I Was Made By Phoenix")
   .setFooter("The Creator Of Me Phoenix")
-  .setImage(`${client.user.displayAvatarURL`)
-  .setThumbnail(`${client.user.displayAvatarURL`)
+  .setImage(`${client.user.displayAvatarURL}`)
+  .setThumbnail(`${client.user.displayAvatarURL}`)
 
 
 
