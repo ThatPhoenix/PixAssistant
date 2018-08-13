@@ -281,6 +281,7 @@ if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
 	if (message.content.startsWith(prefix + "ElcoAdmin#SupremeMLG")) {
   message.channel.send("Verification Complete Welcome Elco!!!")
   message.channel.send(":warning: | Cmds Are Work In Progress")
+	}
 });
 
 client.on("message", async message => {
