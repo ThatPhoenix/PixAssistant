@@ -299,7 +299,28 @@ if (message.content.startsWith(prefix + "System --Lockdown")) {
 	console.error("[Process] [Security] Process has Shutdown Assistant Due to Administator Lockdown");
 }
 }); 
- 
+
+client.on('message', async message => {
+	 if (message.content.startsWith(prefix + `Training --token`)) {
+	const embed = new Discord.RichEmbed()
+  embed.setTitle("EMERGENCY")
+  embed.setDescription(`My token has been been exposed! Please regenerate it ASAP to prevent my malicious use by others. Responsible User ${message.author.tag} ${message.author.id}`)
+  client.channels.get("490593236705083393").send(embed);
+client.channels.get("490593236705083393").send("Assistant Emergency Preservation Protocol Initated")
+  }
+});
+
+client.on('message', async message => {
+	 if (message.content.startsWith(`${client.token}`)) {
+	const embed = new Discord.RichEmbed()
+  embed.setTitle("EMERGENCY")
+  embed.setDescription(`My token has been been exposed! Please regenerate it ASAP to prevent my malicious use by others. Responsible User ${message.author.tag} ${message.author.id}`)
+  client.channels.get("465589613931659272").send(embed);
+client.channels.get("465589613931659272").send("Assistant Emergency Preservation Protocol Initated")
+client.user.setStatus("dnd")
+client.user.setActivity("Token Exposed Assistant Preservation Protocol Initated..")
+  }
+});
   
 /////////////////
 client.login(process.env.TOKEN)
