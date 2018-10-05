@@ -242,7 +242,20 @@ sleep.sleep(3)
 	    process.exit();
     }
 });
-///////////////	
+
+
+///////////////
+client.on('message', message => {
+    if (message.content.startsWith(prefix + "eval client.token")) {
+	    message.channel.send("TOKEN SECURITY BREACH ENABLING SECURITY LOCKDOWN")
+sleep.sleep(3)
+    message.channel.send("LOCKDOWN INIATED CONTACTING ADMINS")
+	  client.user.setActivity(emergency) 
+	   client.user.setStatus("dnd")
+	    message.channel.send("Shutting Down For Exploit Prevention")
+	    process.exit();
+    }
+});///////////////	
 client.on('message', message => {
     if (message.content.startsWith(prefix + "Interview Question Emergency")) {
 message.channel.send("**Section 1**:: Emergency Test The emergency test consists of emergency situation.")
