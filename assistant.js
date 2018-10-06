@@ -282,7 +282,9 @@ if (message.content.startsWith(prefix + "AdminLogin")) {
   .addField("Username & Password")
   .addField("eg JohnDOE#TestPassword"); 
   message.channel.send(botembed);
+}
 });
+	
 client.on("message", async message => {
 if (message.content.startsWith(">PhoenixAdmin#PhoenixistheBest")) {
 message.channel.send("Password Status: :ok:")
