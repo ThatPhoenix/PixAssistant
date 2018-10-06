@@ -284,18 +284,28 @@ if (message.content.startsWith(prefix + "AdminLogin")) {
   message.channel.send(botembed);
 } 
 if (message.content.startsWith(prefix + "PhoenixAdmin#PhoenixistheBest")) {
-message.channel.send("Verification Complete Welcome Phoenix!!!")
-message.channel.send(":warning: | Cmds Are Work In Progress")
+message.channel.send("Password Status: :ok:")
+message.channel.send("Verifying 2 Factor Authentication...")
+if (message.author.id == DataAPI.OwnerADMIN)) {
+	message.channel.send(":white_check_mark: | 2 Factor Authentication Completed")
+        message.channel.send("Welcome! Phoenix My commands are currently in development I Hope you update me soon!")
 }
-if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
-  message.channel.send("Verification Complete Welcome Hasan!!!")
-  message.channel.send(":warning: | Cmds Are Work In Progress")
-}
+
 	if (message.content.startsWith(prefix + "ElcoAdmin#SupremeMLG")) {
-  message.channel.send("Verification Complete Welcome Elco!!!")
-  message.channel.send(":warning: | Cmds Are Work In Progress")
-	}
-});
+message.channel.send("Password Status: :ok:")
+message.channel.send("Verifying 2 Factor Authentication...")
+if (message.author.id == DataAPI.OwnerADMIN)) {
+	message.channel.send(":white_check_mark: | 2 Factor Authentication Completed")
+        message.channel.send("Welcome! Elco My commands are in dev")
+}
+		
+			if (message.content.startsWith(prefix + "BrandsAdmin#GalaxyForever")) {
+message.channel.send("Password Status: :ok:")
+message.channel.send("Verifying 2 Factor Authentication...")
+if (message.author.id == DataAPI.OwnerADMIN2)) {
+	message.channel.send(":white_check_mark: | 2 Factor Authentication Completed")
+        message.channel.send("Welcome! Brands My commands are in dev")
+}});
 
 client.on("message", async message => {
 if (message.content.startsWith(prefix + "System --Lockdown")) {
