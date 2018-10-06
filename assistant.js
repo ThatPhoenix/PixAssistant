@@ -282,7 +282,7 @@ if (message.content.startsWith(prefix + "AdminLogin")) {
   .addField("Username & Password")
   .addField("eg JohnDOE#TestPassword"); 
   message.channel.send(botembed);
-} 
+	
 if (message.content.startsWith(">PhoenixAdmin#PhoenixistheBest")) {
 message.channel.send("Password Status: :ok:")
 message.channel.send("Verifying 2 Factor Authentication...")
