@@ -283,7 +283,7 @@ if (message.content.startsWith(prefix + "AdminLogin")) {
   .addField("eg JohnDOE#TestPassword"); 
   message.channel.send(botembed);
 } 
-if (message.content.startsWith(">PhoenixAdmin#PhoenixistheBest") {
+if (message.content.startsWith(">PhoenixAdmin#PhoenixistheBest")) {
 message.channel.send("Password Status: :ok:")
 message.channel.send("Verifying 2 Factor Authentication...")
 if (message.author.id == DataAPI.OwnerADMIN)) {
@@ -291,7 +291,7 @@ if (message.author.id == DataAPI.OwnerADMIN)) {
         message.channel.send("Welcome! Phoenix My commands are currently in development I Hope you update me soon!")
 }
 
-	if (message.content.startsWith("ElcoAdmin#SupremeMLG") {
+	if (message.content.startsWith("ElcoAdmin#SupremeMLG")) {
 message.channel.send("Password Status: :ok:")
 message.channel.send("Verifying 2 Factor Authentication...")
 if (message.author.id == DataAPI.Admin)) {
@@ -299,7 +299,7 @@ if (message.author.id == DataAPI.Admin)) {
         message.channel.send("Welcome! Elco My commands are in dev")
 }
 		
-			if (message.content.startsWith("BrandsAdmin#GalaxyForever") {
+			if (message.content.startsWith("BrandsAdmin#GalaxyForever")) {
 message.channel.send("Password Status: :ok:")
 message.channel.send("Verifying 2 Factor Authentication...")
 if (message.author.id == DataAPI.OwnerADMIN2)) {
