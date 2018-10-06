@@ -303,7 +303,8 @@ if (message.author.id == (`${DataAPI.Admin}`)) {
 }
 	});
 		
-			if (message.content.startsWith("BrandsAdmin#GalaxyForever")) {
+client.on("message", async message => {	
+	if (message.content.startsWith("BrandsAdmin#GalaxyForever")) {
 message.channel.send("Password Status: :ok:")
 message.channel.send("Verifying 2 Factor Authentication...")
 if (message.author.id == (`${DataAPI.OwnerADMIN2}`)) {
