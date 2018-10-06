@@ -282,7 +282,8 @@ if (message.content.startsWith(prefix + "AdminLogin")) {
   .addField("Username & Password")
   .addField("eg JohnDOE#TestPassword"); 
   message.channel.send(botembed);
-	
+});
+client.on("message", async message => {
 if (message.content.startsWith(">PhoenixAdmin#PhoenixistheBest")) {
 message.channel.send("Password Status: :ok:")
 message.channel.send("Verifying 2 Factor Authentication...")
@@ -290,7 +291,9 @@ if (message.author.id == (`${DataAPI.OwnerADMIN}`)) {
 	message.channel.send(":white_check_mark: | 2 Factor Authentication Completed")
         message.channel.send("Welcome! Phoenix My commands are currently in development I Hope you update me soon!")
 }
-
+});
+	
+client.on("message", async message => {	
 	if (message.content.startsWith("ElcoAdmin#SupremeMLG")) {
 message.channel.send("Password Status: :ok:")
 message.channel.send("Verifying 2 Factor Authentication...")
@@ -298,6 +301,7 @@ if (message.author.id == (`${DataAPI.Admin}`)) {
 	message.channel.send(":white_check_mark: | 2 Factor Authentication Completed")
         message.channel.send("Welcome! Elco My commands are in dev")
 }
+	});
 		
 			if (message.content.startsWith("BrandsAdmin#GalaxyForever")) {
 message.channel.send("Password Status: :ok:")
