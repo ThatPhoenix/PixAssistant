@@ -293,6 +293,7 @@ if (message.author.id == (`${DataAPI.OwnerADMIN}`)) {
 	message.channel.send(":white_check_mark: | 2 Factor Authentication Completed")
         message.channel.send("Welcome! Phoenix My commands are currently in development I Hope you update me soon!")
 }
+}
 });
 	
 client.on("message", async message => {	
@@ -303,6 +304,7 @@ if (message.author.id == (`${DataAPI.Admin}`)) {
 	message.channel.send(":white_check_mark: | 2 Factor Authentication Completed")
         message.channel.send("Welcome! Elco My commands are in dev")
 }
+	}
 	});
 		
 client.on("message", async message => {	
@@ -312,6 +314,7 @@ message.channel.send("Verifying 2 Factor Authentication...")
 if (message.author.id == (`${DataAPI.OwnerADMIN2}`)) {
 	message.channel.send(":white_check_mark: | 2 Factor Authentication Completed")
         message.channel.send("Welcome! Brands My commands are in dev")
+}
 }
 });
 
