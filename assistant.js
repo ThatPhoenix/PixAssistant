@@ -361,8 +361,10 @@ let role = message.guild.roles.find("name", "Gaming Channels");
 
 let member = message.member;
 
-
+message.channel.send("Adding Roles `Gaming Channels`")
 member.addRole(role).catch(console.error);
+message.channel.send("Added `Gaming Channels` If you have not reviceved access to gaming channels please contact a Admin") 
+		
 	}
 });
 
@@ -372,8 +374,9 @@ let role = message.guild.roles.find("name", "Gaming Channels");
 
 let member = message.member;
 
-
+message.channel.send("Removing Roles `Gaming Channels`")
 member.removeRole(role).catch(console.error);
+message.channel.send("Removed `Gaming Channels` If you have not had your access revoked to gaming channels please contact a Admin") 
 	}
 });
 
