@@ -363,7 +363,7 @@ let member = message.member;
 
 
 member.addRole(role).catch(console.error);
-	
+	}
 });
 
 client.on('message', async message => {
@@ -373,7 +373,8 @@ let role = message.guild.roles.find("name", "Gaming Channels");
 let member = message.member;
 
 
-member.removeRole(role).catch(console.error);	
+member.removeRole(role).catch(console.error);
+	}
 });
 
 
