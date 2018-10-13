@@ -356,7 +356,7 @@ client.user.setActivity("Token Exposed Assistant Preservation Protocol Initated.
   }
 })
 client.on('message', async message => {
-	if (message.content.startsWith("!gaming") {
+	if (message.content.startsWith("!gaming")) {
 let role = message.guild.roles.find("name", "Gaming Channels");
 
 let member = message.member;
@@ -367,7 +367,7 @@ member.addRole(role).catch(console.error);
 });
 
 client.on('message', async message => {
-	if (message.content.startsWith("!remove gaming") {
+	if (message.content.startsWith("!remove gaming")) {
 let role = message.guild.roles.find("name", "Gaming Channels");
 
 let member = message.member;
