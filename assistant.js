@@ -354,7 +354,29 @@ client.channels.get("465589613931659272").send("Assistant Emergency Preservation
 client.user.setStatus("dnd")
 client.user.setActivity("Token Exposed Assistant Preservation Protocol Initated..")
   }
+})
+client.on('message', async message => {
+	if (message.content.startsWith("!gaming") {
+let role = message.guild.roles.find("name", "Gaming Channels");
+
+let member = message.member;
+
+
+member.addRole(role).catch(console.error);
+	
 });
-  
+
+client.on('message', async message => {
+	if (message.content.startsWith("!remove gaming") {
+let role = message.guild.roles.find("name", "Gaming Channels");
+
+let member = message.member;
+
+
+member.removeRole(role).catch(console.error);	
+});
+
+
+
 /////////////////
 client.login(process.env.TOKEN)
