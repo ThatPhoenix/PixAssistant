@@ -18,7 +18,7 @@ console.log('[ASSISTANT] [PROCESS] ASSISTANT Online')
 ///////////////////////////////////////
 //EVAL
 client.on('message', message => {
-	if (message.author.id === "338332694725263361") {
+	if (message.author.id === "498186211249225728") {
 		let msg = message.content;
 
 		if (msg.startsWith(">eval")) {
