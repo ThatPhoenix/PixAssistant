@@ -207,7 +207,10 @@ message.channel.send("Removed `Gaming Channels` If you have not had your access 
 	}
 });
 
-
-
+client.on('message', async message => {
+	if (message.content.startsWith(">intro")) {
+		message.channel.send("All Rise for the Lustrous Purple Diamond!")
+	}
+});
 /////////////////
 client.login(process.env.luminous)
