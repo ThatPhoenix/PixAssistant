@@ -234,7 +234,7 @@ if (message.author.id === "498186211249225728") {
     }
 }
 if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
- if (message.author.id === "498186211249225728") {
+ if (message.author.id === "255750690784149504") {
 	message.channel.send("2 Step Authentication Complete.")
 	 
 	message.channel.send("Welcome Hasan, To the new Phoenix Systems 2.0 Admin Panel!")
