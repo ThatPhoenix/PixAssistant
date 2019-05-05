@@ -241,6 +241,26 @@ if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
  message.channel.send(":error: | Commands are in development")
  }
 }
+	
+	if (message.content.startsWith(prefix + "ElcoAdmin#MLGDoritos")) {
+ if (message.author.id === "270600034540716032") {
+	message.channel.send("2 Step Authentication Complete.")
+	 
+	message.channel.send("Welcome Spicy Elco, To the new Phoenix Systems 2.0 Admin Panel!")
+ message.channel.send(":error: | Commands are in development")
+ }
+}
+
+	
+	if (message.content.startsWith(prefix + "NUTAdmin#WildNUT")) {
+ if (message.author.id === "377869902578712576") {
+	message.channel.send("2 Step Authentication Complete.")
+	 
+	message.channel.send("Welcome Wild NUT NUT, To the new Phoenix Systems 2.0 Admin Panel!")
+ message.channel.send(":error: | Commands are in development")
+ }
+}
+	
 });
 
 /////////////////
