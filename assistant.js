@@ -212,5 +212,26 @@ client.on('message', async message => {
 		message.channel.send("All Rise for the Lustrous Purple Diamond!")
 	}
 });
+
+
+client.on("message", async message => {
+if (message.content.startsWith(prefix + "AdminLogin")) {
+  let botembed = new Discord.RichEmbed()
+  .setDescription("Admin Login")
+  .setColor("#15f153")
+  .addField("Username & Password")
+  .addField("eg JohnDOE#TestPassword"); 
+  message.channel.send(botembed);
+} 
+if (message.content.startsWith(prefix + "PhoenixAdmin#PhoenixistheBest")) {
+message.channel.send("Verification Complete Welcome Phoenix!!!")
+message.channel.send(":warning: | Cmds Are Work In Progress")
+}
+if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
+  message.channel.send("Verification Complete Welcome Hasan!!!")
+  message.channel.send(":warning: | Cmds Are Work In Progress")
+}
+});
+
 /////////////////
 client.login(process.env.luminous)
