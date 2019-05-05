@@ -224,8 +224,16 @@ if (message.content.startsWith(prefix + "AdminLogin")) {
   message.channel.send(botembed);
 } 
 if (message.content.startsWith(prefix + "PhoenixAdmin#PhoenixistheBest")) {
-message.channel.send("Verification Complete Welcome Phoenix!!!")
-message.channel.send(":warning: | Cmds Are Work In Progress")
+message.channel.send(":warning: 2 Step Verification Required :warning:")
+if (message.author.id === "498186211249225728") {
+	message.channel.send("2 Step Authentication Complete.")
+	client.get.users("498186211249225728").send("1992")
+			 message.channel.send("A Admin Pin has been sent to the PhoenixAdmin Account Linked Discord Account Via DMs please enter the following pin..")
+	if (message.content.startsWith("1992")) {	
+		message.channel.send("3 step veification complete. Welcome to Phoenix Systems Admin Panel 2.0")
+	}
+	
+    }
 }
 if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
   message.channel.send("Verification Complete Welcome Hasan!!!")
