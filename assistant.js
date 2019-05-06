@@ -261,6 +261,15 @@ if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
  }
 }
 	
+	if (message.content.startsWith(prefix + "DracoAdmin#RapperMan")) {
+ if (message.author.id === "275614246098960386") {
+	message.channel.send("2 Step Authentication Complete.")
+	 
+	message.channel.send("Welcome Draco Rapper Man, To the new Phoenix Systems 2.0 Admin Panel!")
+ message.channel.send(":error: | Commands are in development")
+ }
+}
+	
 });
 
 /////////////////
