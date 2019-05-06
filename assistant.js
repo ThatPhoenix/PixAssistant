@@ -224,6 +224,7 @@ if (message.content.startsWith(prefix + "AdminLogin")) {
   message.channel.send(botembed);
 } 
 if (message.content.startsWith(prefix + "PhoenixAdmin#PhoenixistheBest")) {
+	 message.channel.send("Password & Username is :ok: Verifying Identity..")
 message.channel.send(":warning: 2 Step Verification Required :warning:")
 if (message.author.id === "498186211249225728") {
 	message.channel.send("2 Step Authentication Complete.")
@@ -234,6 +235,8 @@ if (message.author.id === "498186211249225728") {
     }
 }
 if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
+	 message.channel.send("Password & Username is :ok: Verifying Identity..")
+	message.channel.send(":warning: 2 Step Verification Required :warning:")
  if (message.author.id === "255750690784149504") {
 	message.channel.send("2 Step Authentication Complete.")
 	 
@@ -243,6 +246,8 @@ if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
 }
 	
 	if (message.content.startsWith(prefix + "ElcoAdmin#MLGDoritos")) {
+		 message.channel.send("Password & Username is :ok: Verifying Identity..")
+		message.channel.send(":warning: 2 Step Verification Required :warning:")
  if (message.author.id === "270600034540716032") {
 	message.channel.send("2 Step Authentication Complete.")
 	 
@@ -253,6 +258,8 @@ if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
 
 	
 	if (message.content.startsWith(prefix + "NUTAdmin#WildNUT")) {
+		 message.channel.send("Password & Username is :ok: Verifying Identity..")
+		message.channel.send(":warning: 2 Step Verification Required :warning:")
  if (message.author.id === "377869902578712576") {
 	message.channel.send("2 Step Authentication Complete.")
 	 
@@ -262,7 +269,9 @@ if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
 }
 	
 	if (message.content.startsWith(prefix + "DracoAdmin#RapperMan")) {
- if (message.author.id === "275614246098960386") {
+ message.channel.send("Password & Username is :ok: Verifying Identity..")
+		message.channel.send(":warning: 2 Step Verification Required :warning:")
+		if (message.author.id === "275614246098960386") {
 	message.channel.send("2 Step Authentication Complete.")
 	 
 	message.channel.send("Welcome Draco Rapper Man, To the new Phoenix Systems 2.0 Admin Panel!")
