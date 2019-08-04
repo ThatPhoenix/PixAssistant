@@ -230,7 +230,11 @@ if (message.author.id === "498186211249225728") {
 	message.channel.send("2 Step Authentication Complete.")
 	message.channel.send("Welcome Phoenix, To the new Phoenix Systems 2.0 Admin Panel!")
 	message.channel.send(":error: | Commands are in development")
-
+	message.channel.send("This Data is classified information such as Phoenix Systems 2.0  Admin Account Secure Pin & Admin Account secondary Password")
+	client.users.get("498186211249225728").send("Please Enter Admin Account Secure Pin:")
+	if (message.content.startsWith(process.env.SecurePin1)) {
+		
+client.users.get("498186211249225728").send("Identity Confirmed - Welcome to Phoenix Systems 2.0 Admin Panel")
 	
     }
 }
@@ -248,7 +252,7 @@ if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
 	if (message.content.startsWith(prefix + "ElcoAdmin#MLGDoritos")) {
 		 message.channel.send("Password & Username is :ok: Verifying Identity..")
 		message.channel.send(":warning: 2 Step Verification Required :warning:")
- if (message.author.id === "270600034540716032") {  return message.channel.send("Just stop, Your not the real Elco")
+ if (message.author.id === "270600034540716032") {  
 	message.channel.send("2 Step Authentication Complete.")
 	 
 	message.channel.send("Welcome Spicy Elco, To the new Phoenix Systems 2.0 Admin Panel!")
