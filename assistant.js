@@ -232,7 +232,7 @@ if (message.author.id === "498186211249225728") {
 	message.channel.send(":error: | Commands are in development")
 	message.channel.send("This Data is classified information such as Phoenix Systems 2.0  Admin Account Secure Pin & Admin Account secondary Password")
 	client.users.get("498186211249225728").send("Please Enter Admin Account Secure Pin:")
-	if (message.content.startsWith(process.env.SecurePin1)) {
+	if (message.content.startsWith("1337")) {
 		
 client.users.get("498186211249225728").send("Identity Confirmed - Welcome to Phoenix Systems 2.0 Admin Panel")
 	}
