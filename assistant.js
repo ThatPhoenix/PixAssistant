@@ -248,7 +248,7 @@ if (message.content.startsWith(prefix + "HasanAdmin#GalaxyForever")) {
 	if (message.content.startsWith(prefix + "ElcoAdmin#MLGDoritos")) {
 		 message.channel.send("Password & Username is :ok: Verifying Identity..")
 		message.channel.send(":warning: 2 Step Verification Required :warning:")
- if (message.author.id === "270600034540716032") {
+ if (message.author.id === "270600034540716032") {  return message.channel.send("Just stop, Your not the real Elco")
 	message.channel.send("2 Step Authentication Complete.")
 	 
 	message.channel.send("Welcome Spicy Elco, To the new Phoenix Systems 2.0 Admin Panel!")
