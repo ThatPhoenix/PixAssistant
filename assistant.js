@@ -235,6 +235,7 @@ if (message.author.id === "498186211249225728") {
 	if (message.content.startsWith(process.env.SecurePin1)) {
 		
 client.users.get("498186211249225728").send("Identity Confirmed - Welcome to Phoenix Systems 2.0 Admin Panel")
+	}
 	
     }
 }
