@@ -229,12 +229,12 @@ message.channel.send(":warning: 2 Step Verification Required :warning:")
 if (message.author.id === "498186211249225728") {
 	message.channel.send("2 Step Authentication Complete.")
 	message.channel.send("Welcome Phoenix, To the new Phoenix Systems 2.0 Admin Panel!")
-	message.channel.send(":error: | Commands are in development")
-	message.channel.send("This Data is classified information such as Phoenix Systems 2.0  Admin Account Secure Pin & Admin Account secondary Password")
-	client.users.get("498186211249225728").send("Please Enter Admin Account Secure Pin:")
+	message.channel.send("Phoenix Systems 2.0 - Classified Territary Data..")
+	message.channel.send("Please enter your secure pin given in your DMs")
+	client.users.get("498186211249225728").send("1337")
 	if (message.content.startsWith("1337")) {
 		
-client.users.get("498186211249225728").send("Identity Confirmed - Welcome to Phoenix Systems 2.0 Admin Panel")
+client.users.get("498186211249225728").send("Identity Confirmed - Welcome to Phoenix Systems 2.0.. Phoenix.")
 	}
 	
     }
